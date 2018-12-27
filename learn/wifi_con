@@ -1,0 +1,5 @@
+station_cfg={}
+station_cfg.ssid="bingo"
+station_cfg.pwd="1507300136"
+station_cfg.save=true
+wifi.sta.config(station_cfg)

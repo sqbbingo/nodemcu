@@ -1,0 +1,14 @@
+function printap(ap)
+    for k, v in pairs(ap) do
+        print(k.." : "..v)
+    end
+end
+
+wifi.sta.eventMonReg(wifi.STA_GOTIP, function() 
+    print(wifi.sta.getip())
+    wifi.sta.getrssi()
+    wifi.sta.getap(printap)
+end)
+wifi.sta.eventMonStart()
+
+wifi.sta.config("bingo", "1507300136")
